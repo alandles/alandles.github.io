@@ -45,10 +45,10 @@ body {
 }
 
 #section3{
-	padding-top: 150px;
-	width: 100%;
+	padding-top: 125px;
+	/*width: 100%;
 	height: 600px;
-	position: relative;
+	position: relative; */
 }
 
 #section4{
@@ -60,8 +60,8 @@ body {
 
 #section5{
 	padding-top: 90px;
-	width: 100%;
-	height: 600px;
+	/*width: 100%;
+	height: 600px;*/
 	position: relative;
 }
 
@@ -87,7 +87,7 @@ body {
 	font-size: 35px;
 	font-weight: bold;
 	top: 300px;
-	left: 40%;
+	left: 42.20%;
 }
 
 #splash-text{
@@ -100,27 +100,25 @@ body {
 /*Modal -------------------------------------------------------------------------------------------- */
 
 #myModal .modal-content {
-	height: 700px;
-	width: 775px;
+	width: 100%;
 }
 
 
 #myModal .modal-body {
     position: relative;
     overflow-y: auto;
-    height: 580px;
-    width: 760px;
-    padding: 15px;
+    height: 70%;
+    width: 100%;
+    padding-left: 75px;
 }
 
 #myModal .modal-footer {
-	height: 10px;
+	width: 100%;
 }
 
 @media screen and (min-width: 768px) {
 	
 	#myModal .modal-dialog  {width:900px;}
-
 }
 
 /* TIMELINE EXAMPLE----------------------------------------------------------------------------------*/
@@ -409,19 +407,18 @@ width: 80px;
 #bg {
 	position: absolute;
 	width: 100%;
-	height: 900px;
+	height: 100%;
 	opacity: .6;
 }
 
-
 #justengaged {
 	height: 255px;
-	width: 450px;
+	width: 100%;
 }
-
 #upload {
 	height: 268px;
 	}
+	
 .photos {
 		position: static;
 		width: 300px;
@@ -441,7 +438,7 @@ width: 80px;
 
 #map {
         height:700px;
-        width:1440px;
+        width:100%;
 }
     
 .gm-style-iw * {
@@ -460,10 +457,15 @@ width: 80px;
 }
 
 #comingsoon {
+	margin:auto;
+	width: 80%;
+/*
 position: relative;
 vertical-align: middle;
-left: 250px;
+left: 250px; */
 }
+
+
 /* Buttons-------------------------------------------------------------------------------------------*/
 
 .btn {
