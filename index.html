@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 </head>
 
 <body>
@@ -38,24 +39,24 @@
 					<li><a href="#section4">Logistics</a></li>
 					<li><a href="#section5">Weekend Activities</a></li>
 					<li><a href="#" data-toggle="modal" data-target="#myModal">RSVP</a></li>
-					<li><a href="#section7">Registry</a></li>
+					<li><a href="section7">Registry</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.navbar container -->
 	</nav><!--End Header-->
+	<header>
+				<div class="header-content">
+					<div class="header-content-inner">
+	            <h1>Natalie & Andy</h1>
+	            <br>
+	            <p>July 30, 2016 
+	            	<br> 
+	            Saratoga, CA</p>
+					</div>
+			</div>
+	</header> 
 
-	<div id="splash">
-		<img class="img-responsive" id="bg" src="images/domebg.jpg"/>
-	            <h1 id="splash-heading">Natalie & Andy</h1>
-	            <p id="splash-text">
-	            	July 30, 2016
-	            	<br>
-	            	Saratoga, CA
-							</p>
-	</div> 
-
-<div id="section2"><!--Start of Section 2-->
-	<div class="container"><!--The Start of the Timeline-->
+	<div id="section2" class="container"><!--The Start of the Timeline-->
 	  <div class="page-header">
 	    <h1 id="timeline">Our Story</h1>
 	  </div>
@@ -170,7 +171,6 @@
 	    </li>
 	  </ul>
 	</div> <!-- the end of the timeline-->
-</div>
 
 
 
@@ -370,13 +370,6 @@
 
 	<div id="section4">
 		<div id="map"></div>
-		<!--I need to photoshop what the main images will be for this section-->
-		  <!--Integrate Google Maps into this section-->
-		  <!--Wedding/Reception Times-->
-		  <!--Directions-->
-		  <!--Parking Info-->
-		  <!--Shuttles-->
-		  <!--Hotels-->
 	</div>
 
 
@@ -421,8 +414,35 @@
 				<div class="thumbnail">
 				<a href="https://formcrafts.com/a/NatGenandy" target="_blank"><img id="honeymoonregistry" src="images/honeymoonregistry.jpg"></a>
 
-					<!--<a data-target='#f5f585' data-toggle='fcmodal' href='https://formcrafts.com/a/17196'>Click Here</a>
-					<script type='text/javascript'>var _fo=_fo||[];_fo.push({'m':'true','c':'f5f585','i':17196});if(typeof fce=='undefined'){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src='https://'+'formcrafts.com/js/fc.js';var fi=document.getElementsByTagName('script')[0];fi.parentNode.insertBefore(s,fi);fce=1;}</script> -->
+
+					<form action="" method="POST" id="payment-form">
+  <span class="payment-errors"></span>
+
+  <div class="form-row">
+    <label>
+      <span>Card Number</span>
+      <input type="text" size="20" data-stripe="number"/>
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label>
+      <span>CVC</span>
+      <input type="text" size="4" data-stripe="cvc"/>
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label>
+      <span>Expiration (MM/YYYY)</span>
+      <input type="text" size="2" data-stripe="exp-month"/>
+    </label>
+    <span> / </span>
+    <input type="text" size="4" data-stripe="exp-year"/>
+  </div>
+
+  <button type="submit">Submit Payment</button>
+</form>
 			</div>
 			</div>
 		  <div class="col-sm-6 col-md-6">
