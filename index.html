@@ -412,37 +412,118 @@
 		<div class="row">
 			<div class="col-sm-6 col-md-6">
 				<div class="thumbnail">
-				<a href="https://formcrafts.com/a/NatGenandy" target="_blank"><img id="honeymoonregistry" src="images/honeymoonregistry.jpg"></a>
+					<a href="#"data-toggle="modal" data-target="#myModalHorizontal"><img src="images/honeymoonregistry.jpg"></a>
 
+<!-- Modal -->
+<div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    Help Us Have Our Dream Honeymoon!
+                </h4>
+                <p>(any amount is greatly appreciated)
+                </p>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <form class="form-horizontal">
+<fieldset>
 
-					<form action="" method="POST" id="payment-form">
-  <span class="payment-errors"></span>
-
-  <div class="form-row">
-    <label>
-      <span>Card Number</span>
-      <input type="text" size="20" data-stripe="number"/>
-    </label>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="taxis">Taxis</label>  
+  <div class="col-md-4">
+  <input id="taxis" name="taxis" type="number" placeholder="getting to and fro!" class="form-control input-md">
+    
   </div>
+</div>
 
-  <div class="form-row">
-    <label>
-      <span>CVC</span>
-      <input type="text" size="4" data-stripe="cvc"/>
-    </label>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="flights">Flights  $</label>  
+  <div class="col-md-4">
+  <input id="flights" name="flights" type="number" placeholder="going international!" class="form-control input-md">
+    
   </div>
+</div>
 
-  <div class="form-row">
-    <label>
-      <span>Expiration (MM/YYYY)</span>
-      <input type="text" size="2" data-stripe="exp-month"/>
-    </label>
-    <span> / </span>
-    <input type="text" size="4" data-stripe="exp-year"/>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="hotels">Hotels    $</label>  
+  <div class="col-md-4">
+  <input id="hotels" name="hotels" type="number" placeholder="view of the ocean!" class="form-control input-md">
+    
   </div>
+</div>
 
-  <button type="submit">Submit Payment</button>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="dinners">Dinners $</label>  
+  <div class="col-md-4">
+  <input id="dinners" name="dinners" type="number" placeholder="delicious food!" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="excursions">Excurions $</label>  
+  <div class="col-md-4">
+  <input id="excursions" name="excursions" type="number" placeholder="adventure time!" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="drinks">Drinks by the pool $</label>  
+  <div class="col-md-4">
+  <input id="drinks" name="drinks" type="number" placeholder="fun &amp; games" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="spa">Spa Treatments $</label>  
+  <div class="col-md-4">
+  <input id="spa" name="spa" type="number" placeholder="ultimate relaxation!" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="specialmessage">Special Message</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="specialmessage" name="specialmessage"></textarea>
+  </div>
+</div>
+
+</fieldset>
 </form>
+
+            </div>
+            
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+            	
+             <button type="button" class="btn btn-primary">
+                    Save changes
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 			</div>
 			</div>
 		  <div class="col-sm-6 col-md-6">
