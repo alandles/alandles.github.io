@@ -103,13 +103,13 @@ header .header-content .header-content-inner p {
 /*Sections ------------------------------------------------------------------------------------------*/
 
 	
-#section2{
+#ourstory{
 	padding-top: 30px;
 	width: 100%;
 	position: relative;
 }
 
-#section3{
+#photos{
 	padding-top: 60px;
 	height: auto;
 	/*width: 100%;
@@ -117,14 +117,14 @@ header .header-content .header-content-inner p {
 	position: relative; */
 }
 
-#section4{
+#logistics{
 	padding-top: 20px;
 	width: 100%;
 	height: auto;
 	position: relative;
 }
 
-#section5{
+#activities{
 	padding-top: 40px;
 	width: 100%;
 	height: auto;
@@ -136,7 +136,7 @@ header .header-content .header-content-inner p {
 	vertical-align: center;
 }
 
-#section7{
+#registries{
 	width: 100%;
 	height: auto;
 	position: relative; 
@@ -504,7 +504,7 @@ width: 80px;
     margin: 25px;
 	}
 
-#section3 #photos {
+#photos #photos {
 		position: relative;
 		width: 300px;
     padding: 25px;

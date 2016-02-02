@@ -34,11 +34,11 @@
 	    </div>
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li><a class="page-scroll" href="#section2">OurStory</a></li>
-					<li><a class="page-scroll" href="#section3">Photos</a></li>
-					<li><a class="page-scroll" href="#section4">Logistics</a></li>
-					<li><a class="page-scroll" href="#section5">Weekend Activities</a></li>
-					<li><a class="page-scroll" href="#section7">Registries</a></li>
+	        <li><a class="page-scroll" href="#ourstory">OurStory</a></li>
+					<li><a class="page-scroll" href="#photos">Photos</a></li>
+					<li><a class="page-scroll" href="#logistics">Logistics</a></li>
+					<li><a class="page-scroll" href="#activities">Weekend Activities</a></li>
+					<li><a class="page-scroll" href="#registries">Registries</a></li>
 					<li><a class="page-scroll" href="#" data-toggle="modal" data-target="#myModal">RSVP</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
@@ -51,7 +51,7 @@
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
+        }, 3000, 'easeInOutQuad');
         event.preventDefault();
     });
 
@@ -101,7 +101,7 @@
 			</div>
 	</header> 
 
-	<div id="section2" class="container"><!--The Start of the Timeline-->
+	<div id="ourstory" class="container"><!--The Start of the Timeline-->
 	  <div class="page-header">
 	    <h1 id="timeline">Our Story</h1>
 	  </div>
@@ -393,7 +393,7 @@
 
 
 
-	<div id="section3">
+	<div id="photos">
 		<div class="row">
 		  <div class="col-sm-6 col-md-4">
 		    <div class="thumbnail">
@@ -452,16 +452,16 @@
 		    </div>
 		  </div>
 		</div>
-	</div><!--Close of section3-->
+	</div><!--Close of photos-->
 
 
-	<div id="section4">
+	<div id="logistics">
 		<h2>Logistics</h2>
 		<div id='map'></div>
 	</div>
 
 
-	<div id="section5">
+	<div id="activities">
 		<h2>Weekend Activities!</h2>
 		<img id="comingsoon" src="images/comingsoon.png">
 	</div>
@@ -497,12 +497,12 @@
 </div>
 <!-- END MODALS SECTION  -->
 
-<div id="section7">
+<div id="registries">
 	<h2>Registries</h2>
 		<div class="row">
 			<div class="col-md-6 col-md-6">
 			<div class="thumbnail">
-				<a href="https://www.honeyfund.com/wedding/GencoLandlesMerger" target="_blank"><img id="honeyfund" src="images/honeyfund.png" alt="..."></a>
+				<a href="https://www.honeyfund.com/wedding/GencoLandlesMerger#r" target="_blank"><img id="honeyfund" src="images/honeyfund.png" alt="..."></a>
 				</div>
 			</div>
 		<div class="col-md-6 col-md-6">
