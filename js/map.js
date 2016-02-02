@@ -14,7 +14,7 @@ google.maps.event.addDomListener(window, 'load', init);
                 style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
             },
             scaleControl: false,
-            scrollwheel: true,
+            scrollwheel: false,
             panControl: true,
             streetViewControl: true,
             draggable : false,
