@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+	<script src="js/jquery.easing.min.js"></script>
 </head>
 
 <body>
@@ -30,18 +30,63 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-				<a href=""><img src="images/weddinglogo.gif" id="weddinglogo" href="#"></a>
+				<a class="nav-bar page-scroll" href=""><img src="images/weddinglogo.gif" id="weddinglogo" href="#"></a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li><a href="#section2">OurStory</a></li>
-					<li><a href="#section3">Photos</a></li>
-					<li><a href="#section4">Logistics</a></li>
-					<li><a href="#section5">Weekend Activities</a></li>
-					<li><a href="#section7">Registries</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal">RSVP</a></li>
+	        <li><a class="page-scroll" href="#section2">OurStory</a></li>
+					<li><a class="page-scroll" href="#section3">Photos</a></li>
+					<li><a class="page-scroll" href="#section4">Logistics</a></li>
+					<li><a class="page-scroll" href="#section5">Weekend Activities</a></li>
+					<li><a class="page-scroll" href="#section7">Registries</a></li>
+					<li><a class="page-scroll" href="#" data-toggle="modal" data-target="#myModal">RSVP</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
+	    <script>
+(function($) {
+    "use strict"; // Start of use strict
+
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '.navbar-fixed-top',
+        offset: 51
+    })
+
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
+
+    // Fit Text Plugin for Main Header
+    $("h1").fitText(
+        1.2, {
+            minFontSize: '35px',
+            maxFontSize: '65px'
+        }
+    );
+
+    // Offset for Main Navigation
+    $('#mainNav').affix({
+        offset: {
+            top: 100
+        }
+    })
+
+    // Initialize WOW.js Scrolling Animations
+    new WOW().init();
+
+})(jQuery);
+	</script>
+
 	  </div><!-- /.navbar container -->
 	</nav><!--End Header-->
 	<header>
@@ -472,8 +517,7 @@
 			
 			<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 			<script src="js/bootstrap-image-gallery.min.js"></script>
-<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDgnvE_S53t_EYrJcya_nAYcAM8FlgsveU&sensor=false&extension=.js'></script> 
-			<script type="text/javascript" src="js/gmaps.js"></script>
+ 			<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDgnvE_S53t_EYrJcya_nAYcAM8FlgsveU&sensor=false&extension=.js'></script> 
 			<script type="text/javascript" src="js/map.js"></script>
 </body>
 </html>
