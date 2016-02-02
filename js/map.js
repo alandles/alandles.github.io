@@ -1,9 +1,9 @@
-    google.maps.event.addDomListener(window, 'load', init);
+google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
-            center: new google.maps.LatLng(37.299445, -122.030851),
-            zoom: 12,
+            center: new google.maps.LatLng(37.311526,-122.019712),
+            zoom: 11,
             zoomControl: true,
             zoomControlOptions: {
                 style: google.maps.ZoomControlStyle.DEFAULT,
@@ -14,10 +14,10 @@
                 style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
             },
             scaleControl: false,
-            scrollwheel: false,
+            scrollwheel: true,
             panControl: true,
             streetViewControl: true,
-            draggable : true,
+            draggable : false,
             overviewMapControl: true,
             overviewMapControlOptions: {
                 opened: false,
@@ -27,7 +27,7 @@
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['Wedding Venue', 'Come find us in Cathedral Grove!', 'undefined', 'undefined', 'undefined', 37.2498785, -122.0682979, 'https://mapbuildr.com/assets/img/markers/default.png'],['Hotel/Shuttle', 'Come stay with us or get a ride to the wedding!', 'undefined', 'undefined', 'undefined', 37.3254505, -122.03287749999998, 'https://mapbuildr.com/assets/img/markers/default.png']
+['Find us in Cathedral Grove', '22801 Big Basin Way<br />Saratoga, CA 95070', 'undefined', 'undefined', 'undefined', 37.2498785, -122.0682979, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Hotel & Shuttle Location', '10165 North De Anza Boulevard<br />Cupertino, CA 95014', 'undefined', 'undefined', 'undefined', 37.3254505, -122.03287749999998, 'https://mapbuildr.com/assets/img/markers/solid-pin-blue.png']
         ];
         for (i = 0; i < locations.length; i++) {
 			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}

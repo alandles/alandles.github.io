@@ -118,7 +118,7 @@ header .header-content .header-content-inner p {
 }
 
 #section4{
-	padding-top: 90px;
+	padding-top: 20px;
 	width: 100%;
 	height: auto;
 	position: relative;
@@ -513,25 +513,21 @@ width: 80px;
     margin: 25px;
 }
 
-#map {
-        height:700px;
-        width:100%;
-}
-    
-.gm-style-iw * {
-        font-size: 12px;
-        vertical-align: middle;
-        word-spacing: normal;
-}
-
-.gm-style-iw h4, .gm-style-iw p {
+ #map {
+        height:400px;
+        width:700px;
+    }
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
         margin: 0;
         padding: 0;
-}
-
-.gm-style-iw a {
+    }
+    .gm-style-iw a {
         color: #4272db;
-}
+    }
 
 #comingsoon {
 	margin:auto;
@@ -542,6 +538,15 @@ vertical-align: middle;
 left: 250px; */
 }
 
+#honeyfund {
+	height: auto;
+	width: auto;
+}
+
+#macys {
+height: auto;
+width: auto;
+}
 
 /* Buttons-------------------------------------------------------------------------------------------*/
 
