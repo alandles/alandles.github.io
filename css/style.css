@@ -514,8 +514,8 @@ width: 80px;
 }
 
  #map {
-        height:400px;
-        width:700px;
+        height:100%;
+        width:100%;
     }
     .gm-style-iw * {
         display: block;
