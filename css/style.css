@@ -35,9 +35,8 @@ header {
 	position: relative;
 	width: 100%;
 	min-height: auto;
-	/*height: 700px;*/
 	text-align: center;
-	background-image: url(../images/domebg.png);
+	background-image: url("https://s3-us-west-1.amazonaws.com/natgenandy.com/images/domebg.png");
 	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -489,11 +488,10 @@ width: 80px;
 /*Images --------------------------------------------------------------------------------------------*/
 
 #justengaged {
-	height: 255px;
 	width: 100%;
 }
 #upload {
-	height: 268px;
+	
 	}
 	
 .photos {
