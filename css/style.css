@@ -482,7 +482,17 @@ width: 80px;
 	content: none;
 }
 
+/*Weekend Activities-----------------------------------------------------------*/
+#amenities
 
+
+#friday
+
+
+#saturday
+
+
+#sunday
 
 /*Images --------------------------------------------------------------------------------------------*/
 
@@ -525,15 +535,6 @@ width: 80px;
     .gm-style-iw a {
         color: #4272db;
     }
-
-#comingsoon {
-	margin:auto;
-	width: 80%;
-/*
-position: relative;
-vertical-align: middle;
-left: 250px; */
-}
 
 #honeyfund {
 	height: auto;
