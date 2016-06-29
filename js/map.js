@@ -28,9 +28,9 @@ google.maps.event.addDomListener(window, 'load', init);
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
 ['Wedding Venue', 'Meet us in Cathedral Grove for the ceremony & reception', 'undefined', 'undefined', 'www.saratoga-springs.com/', 37.2498654, -122.06830200000002, 'images/weddingpin.png'],
-['Hotel/Shuttle', 'Hotel block<br>Shuttle pickup/dropoff', 'undefined', 'undefined', 'https://www.starwoodmeeting.com/Book/natalieandandywedding', 37.3254505, -122.03287749999998, 'images/hotelshuttlepin.png'],
+['Hotel/Shuttle', 'Hotel block<br>Shuttle pickup/dropoff', 'undefined', 'undefined', 'https://www.starwoodmeeting.com/Book/natalieandandywedding', 37.325859, -122.032313, 'images/hotelshuttlepin.png'],
 ['Friday Drinks!', 'Casual drinks in a private setting', 'undefined', 'undefined', 'http://www.thedevilsacre.com/#home', 37.7976889, -122.406135, 'images/drinkspin.png'],
-['Sunday Brunch!', 'Brunch on Sunday. Hobee\'s is a Genco/Griffiths family favorite', 'undefined', 'undefined', 'http://www.hobees.com/', 37.3234955, -122.04775419999999, 'images/brunchpin.png']
+['Sunday Brunch!', 'Brunch on Sunday. Hobee\'s is a Genco/Griffiths family favorite', 'undefined', 'undefined', 'http://www.hobees.com/', 37.323355, -122.049055, 'images/brunchpin.png']
         ];
         for (i = 0; i < locations.length; i++) {
 			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
