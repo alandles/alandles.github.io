@@ -2,32 +2,35 @@ google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
-            center: new google.maps.LatLng(37.311526,-122.019712),
-            zoom: 11,
+            center: new google.maps.LatLng(37.535866,-122.075502),
+            zoom: 10,
             zoomControl: true,
             zoomControlOptions: {
                 style: google.maps.ZoomControlStyle.DEFAULT,
             },
-            disableDoubleClickZoom: true,
+            disableDoubleClickZoom: false,
             mapTypeControl: true,
             mapTypeControlOptions: {
-                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
             },
             scaleControl: false,
             scrollwheel: false,
             panControl: true,
             streetViewControl: true,
-            draggable : false,
+            draggable : true,
             overviewMapControl: true,
             overviewMapControlOptions: {
-                opened: false,
+                opened: true,
             },
             mapTypeId: google.maps.MapTypeId.ROADMAP,
         }
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['Find us in Cathedral Grove', '22801 Big Basin Way<br />Saratoga, CA 95070', 'undefined', 'undefined', 'undefined', 37.2498785, -122.0682979, 'https://mapbuildr.com/assets/img/markers/solid-pin-red.png'],['Hotel & Shuttle Location', '10165 North De Anza Boulevard<br />Cupertino, CA 95014', 'undefined', 'undefined', 'undefined', 37.3254505, -122.03287749999998, 'https://mapbuildr.com/assets/img/markers/solid-pin-blue.png']
+['Wedding Venue', 'Meet us in Cathedral Grove for the ceremony & reception', 'undefined', 'undefined', 'www.saratoga-springs.com/', 37.2498654, -122.06830200000002, 'images/weddingpin.png'],
+['Hotel/Shuttle', 'Hotel block<br>Shuttle pickup/dropoff', 'undefined', 'undefined', 'https://www.starwoodmeeting.com/Book/natalieandandywedding', 37.3254505, -122.03287749999998, 'images/hotelshuttlepin.png'],
+['Friday Drinks!', 'Casual drinks in a private setting', 'undefined', 'undefined', 'http://www.thedevilsacre.com/#home', 37.7976889, -122.406135, 'images/drinkspin.png'],
+['Sunday Brunch!', 'Brunch on Sunday. Hobee\'s is a Genco/Griffiths family favorite', 'undefined', 'undefined', 'http://www.hobees.com/', 37.3234955, -122.04775419999999, 'images/brunchpin.png']
         ];
         for (i = 0; i < locations.length; i++) {
 			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
@@ -45,7 +48,12 @@ google.maps.event.addDomListener(window, 'load', init);
                 email: email,
                 web: web
             });
-link = '';            bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
+if (web.substring(0, 7) != "http://") {
+link = "http://" + web;
+} else {
+link = web;
+}
+            bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
      }
  function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
       var infoWindowVisible = (function () {
@@ -63,7 +71,7 @@ link = '';            bindInfoWindow(marker, map, locations[i][0], description, 
                    iw.close();
                    infoWindowVisible(false);
                } else {
-                   var html= "<div style='color:#000;background-color:#fff;padding:5px;width:150px;'><h4>"+title+"</h4><p>"+desc+"<p></div>";
+                   var html= "<div style='color:#000;background-color:#fff;padding:5px;width:70px;'><h4>"+title+"</h4><p>"+desc+"<p><a href='"+link+"'' >"+web+"<a></div>";
                    iw = new google.maps.InfoWindow({content:html});
                    iw.open(map,marker);
                    infoWindowVisible(true);

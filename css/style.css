@@ -111,9 +111,8 @@ header .header-content .header-content-inner p {
 #photos{
 	padding-top: 60px;
 	height: auto;
-	/*width: 100%;
-	height: 600px;
-	position: relative; */
+	width: 98%;
+	/*position: relative; */
 }
 
 #logistics{
@@ -125,14 +124,14 @@ header .header-content .header-content-inner p {
 
 #activities{
 	padding-top: 40px;
-	width: 100%;
+	width: 98%;
 	height: auto;
 	position: relative;
 }
 
 
 #registries{
-	width: 100%;
+	width: 98%;
 	height: auto;
 	position: relative; 
 	padding-top: 5px;
@@ -516,13 +515,13 @@ width: 80px;
     margin: 25px;
 }
 
- #map {
-        height:100%;
+      #map {
+        height:90%;
         width:100%;
     }
     .gm-style-iw * {
         display: block;
-        width: 100%;
+        width: 200px;
     }
     .gm-style-iw h4, .gm-style-iw p {
         margin: 0;
@@ -531,6 +530,16 @@ width: 80px;
     .gm-style-iw a {
         color: #4272db;
     }
+		#iw-container  .iw-title {
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 22px;
+   font-weight: 400;
+   padding: 10px;
+   background-color: #48b5e9;
+   color: white;
+   margin: 1px;
+   border-radius: 2px 2px 0 0; /* In accordance with the rounding of the default infowindow corners. */
+}
 
 #honeyfund {
 	height: auto;
